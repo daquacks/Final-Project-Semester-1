@@ -11,17 +11,6 @@ public class Book {
    private double annualInflationRate; // In percentage
    private double totalRevenue;
    
-   public Book(String title, Author author, Publisher publisher) {
-       this.title=title;
-       this.author=author;
-       this.publisher=publisher;
-       saleNumbers = new int[6];
-       annualInflationRate=7.0;
-       price=17.72;
-       price+=Math.round((price*(annualInflationRate/100.0))*100)/100.0; // Adjusts with inflation rate (in this economy??? I know...)
-       edition=1;
-   }
-   
    public Book(String title, Author author, Publisher publisher, int edition) {
        this.title=title;
        this.author=author;
